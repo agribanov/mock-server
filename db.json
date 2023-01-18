@@ -1,0 +1,17 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "title": "Category 1"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "title": "Product 1",
+            "categoryId": 1,
+            "price": 100,
+            "description": "Lorem ....."
+        }
+    ]
+}
