@@ -26,6 +26,14 @@ server.use((req, res, next) => {
     }
     next();
 });
+
+server.get('/auth/user', (req, res) => {
+    res.json({
+        name: 'Alex Smith',
+        role: 'admin',
+    });
+});
+
 server.use(router);
 
 server.listen(port);
