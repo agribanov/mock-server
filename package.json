@@ -18,6 +18,7 @@
     },
     "homepage": "https://github.com/agribanov/mock-server#readme",
     "dependencies": {
-        "json-server": "^0.17.1"
+        "json-server": "^0.17.1",
+        "uuid": "^9.0.0"
     }
 }
