@@ -34,6 +34,10 @@ server.get('/auth/user', (req, res) => {
     });
 });
 
+server.get('error', (req, res) => {
+    res.status(500).send();
+});
+
 server.use(router);
 
 server.listen(port);
