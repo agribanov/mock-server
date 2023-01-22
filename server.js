@@ -19,6 +19,10 @@ server.post('/auth/login', (req, res) => {
     }
 });
 
+server.get('/error', (req, res) => {
+    res.status(500).send();
+});
+
 server.use((req, res, next) => {
     const token = req.headers.authorization;
     if (!token) {
@@ -32,10 +36,6 @@ server.get('/auth/user', (req, res) => {
         name: 'Alex Smith',
         role: 'admin',
     });
-});
-
-server.get('error', (req, res) => {
-    res.status(500).send();
 });
 
 server.use(router);
